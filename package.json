@@ -1,7 +1,8 @@
 {
-  "name": "code-merger-god-mode",
+  "name": "repo-to-prompt",
+  "productName": "RepoToPrompt",
+  "description": "Prepare your codebase for LLM context instantly",
   "version": "1.0.0",
-  "description": "Ultimate Code Merger",
   "main": "dist/main.js",
   "author": "DORI",
   "scripts": {

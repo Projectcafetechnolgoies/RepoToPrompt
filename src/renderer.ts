@@ -68,8 +68,25 @@ dropZone.addEventListener('drop', async (e: DragEvent) => {
 
         if (result.warnings.length > 0) {
             warningEl.style.display = 'block';
-            warningEl.innerHTML = `<strong>⚠️ SECURITY RISK:</strong> ${result.warnings.length} keys detected! <br/>` +
-                result.warnings.map(w => `<small>${w.type} in ${w.file}</small>`).join('<br/>');
+
+            const warningList = result.warnings.map(w => {
+                return `<div style="margin-bottom: 4px;">
+                            <span style="color: #ff8888; font-weight: bold;">${w.type}</span> 
+                            found in 
+                            <span style="font-family: monospace; background: #330000; padding: 2px 5px; border-radius: 4px;">
+                                ${w.file}:${w.line}
+                            </span>
+                        </div>`;
+            }).join('');
+
+            warningEl.innerHTML = `
+                <div style="margin-bottom: 8px; font-weight: bold; border-bottom: 1px solid #ff4444; padding-bottom: 5px;">
+                    ⚠️ SECURITY RISK DETECTED (${result.warnings.length})
+                </div>
+                ${warningList}
+            `;
+        } else {
+            warningEl.style.display = 'none';
         }
 
         btnCopy.disabled = false;
