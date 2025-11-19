@@ -1,4 +1,6 @@
 # RepoToPrompt 🚀
+![App Screenshot](assets/homePage.png)
+![App Screenshot](assets/homeResultPage.png)
 
 **RepoToPrompt** is a desktop tool designed for developers. It converts your entire project structure (files & folders) into a single, optimized text file ready for LLMs like **ChatGPT**, **Claude**, or **Gemini**.
 
