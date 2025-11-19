@@ -1,7 +1,8 @@
 {
-  "name": "code-merger-god-mode",
-  "version": "1.0.0",
-  "description": "Ultimate Code Merger",
+  "name": "repo-to-prompt",
+  "productName": "RepoToPrompt",
+  "description": "Prepare your codebase for LLM context instantly",
+  "version": "1.1.0",
   "main": "dist/main.js",
   "author": "DORI",
   "scripts": {
@@ -10,8 +11,8 @@
     "dist": "npm run build && electron-builder"
   },
   "build": {
-    "appId": "com.yourname.codemerger",
-    "productName": "CodeMerger",
+    "appId": "com.dori.repotoprompt",
+    "productName": "RepoToPrompt",
     "directories": {
       "output": "release"
     },

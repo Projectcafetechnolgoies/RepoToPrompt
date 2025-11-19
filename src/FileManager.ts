@@ -22,20 +22,30 @@ export class FileManager {
 
     public static scanForKeys(files: FileEntry[]): SecurityWarning[] {
         const warnings: SecurityWarning[] = [];
+
         const patterns = [
             { name: 'OpenAI Key', regex: /sk-[a-zA-Z0-9]{48}/g },
             { name: 'AWS Key', regex: /(AKIA|AGPA|AIDA|AROA|AIPA|ANPA|ANVA|ASIA)[A-Z0-9]{16}/g },
             { name: 'Google Key', regex: /AIza[0-9A-Za-z-_]{35}/g },
             { name: 'Private Key', regex: /-----BEGIN PRIVATE KEY-----/g },
+            { name: 'Generic Secret', regex: /((api|secret|access)[_.-]?key)['"]?\s*[:=]\s*['"][a-zA-Z0-9_=-]{20,}['"]/gi } // Додав універсальний пошук
         ];
 
         files.forEach(file => {
             patterns.forEach(pattern => {
-                if (pattern.regex.test(file.content)) {
+                pattern.regex.lastIndex = 0;
+
+                let match;
+                while ((match = pattern.regex.exec(file.content)) !== null) {
+
+
+                    const textBefore = file.content.substring(0, match.index);
+                    const lineNumber = textBefore.split('\n').length;
+
                     warnings.push({
                         file: file.relativePath,
                         type: pattern.name,
-                        line: 0
+                        line: lineNumber
                     });
                 }
             });
